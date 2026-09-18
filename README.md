@@ -1,7 +1,7 @@
 # 🏛️ Glory to the Past — Luxury Heritage & Ancient Travel Platform
 
 "**Glory to the Past**" is an end-to-end, full-stack luxury heritage, ancient travel, and vintage experience booking platform. Step back in time to inhabit fortified medieval ramparts, traverse historic routes aboard gilded carriages, and unlock sealed antiquity sanctuaries with the world's master historians.
-
+Efforts of My Friend Mohit and Me (Revam Visave)
 ---
 
 ## 🌟 Tech Stack
