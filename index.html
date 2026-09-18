@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glory to the Past — Luxury Heritage & Experiential Travel</title>
+  <meta name="description" content="Step back in time. Luxury heritage stays, multimodal royal transport, and certified archaeologist-led experiences across ancient civilizations and royal kingdoms.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            parchment: {
+              DEFAULT: '#FDFBF7',
+              card: '#FAF6EE',
+              border: '#E8DECA'
+            },
+            royalNavy: {
+              DEFAULT: '#0F172A',
+              light: '#1E293B',
+              dark: '#080C15'
+            },
+            antiqueGold: {
+              DEFAULT: '#D4AF37',
+              light: '#F4E5B0',
+              dark: '#AA820A'
+            },
+            royalMaroon: {
+              DEFAULT: '#800020',
+              light: '#9B111E'
+            }
+          },
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Royal Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-parchment text-slate-900 antialiased min-h-screen flex flex-col selection:bg-antiqueGold selection:text-royalNavy">
+
+  <!-- Top Royal Announcement Bar -->
+  <aside class="bg-royalNavy border-b border-antiqueGold/30 text-antiqueGold-light text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 justify-center">
+        <span class="inline-block w-2 h-2 rounded-full bg-antiqueGold animate-ping"></span>
+        <span class="font-medium tracking-wide">
+          Private Sanctuary Access: 15th-Century Amber Subterranean Chambers now open for reservations.
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] text-slate-300">
+        <span class="flex items-center gap-1"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-antiqueGold"></i> ASI Verified Custodians</span>
+        <span class="hidden md:inline">•</span>
+        <span class="hidden md:flex items-center gap-1"><i data-lucide="phone-call" class="w-3.5 h-3.5 text-antiqueGold"></i> Royal Butler Concierge: +1 (800) PALACE-GLORY</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Global Header & Navigation -->
+  <header class="sticky top-0 z-40 bg-royalNavy/95 backdrop-blur-md border-b border-antiqueGold/20 shadow-xl transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <!-- Ornate Arch / Shield Emblem -->
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-royalNavy-light to-royalNavy border border-antiqueGold/50 flex items-center justify-center shadow-lg group-hover:border-antiqueGold transition-colors">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L4 5V11C4 16.5 7.5 21 12 22C16.5 21 20 16.5 20 11V5L12 2Z" stroke="#D4AF37" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M12 6C9.5 6 8 8.5 8 12V18H16V12C16 8.5 14.5 6 12 6Z" stroke="#F4E5B0" stroke-width="1.3"/>
+              <path d="M12 2V6M12 18V22" stroke="#D4AF37" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="1.5" fill="#D4AF37"/>
+            </svg>
+          </div>
+          <div>
+            <span class="font-display font-bold text-xl sm:text-2xl text-white tracking-widest block leading-none group-hover:text-antiqueGold-light transition-colors">
+              GLORY <span class="text-antiqueGold font-normal text-lg">TO THE</span> PAST
+            </span>
+            <span class="text-[9px] uppercase tracking-[0.25em] text-antiqueGold/90 font-medium block mt-1">
+              Imperial Heritage Travel & Citadels
+            </span>
+          </div>
+        </a>
+
+        <!-- Primary Category Tabs (Desktop) -->
+        <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2">
+          <button data-target="heritage-stays-section" class="nav-category-tab nav-tab-active px-3 py-2 text-sm font-medium tracking-wide text-slate-200 hover:text-antiqueGold transition-colors flex items-center gap-1.5">
+            <i data-lucide="castle" class="w-4 h-4 text-antiqueGold"></i>
+            <span>Heritage Stays</span>
+          </button>
+          <button data-target="transport-section" class="nav-category-tab px-3 py-2 text-sm font-medium tracking-wide text-slate-200 hover:text-antiqueGold transition-colors flex items-center gap-1.5">
+            <i data-lucide="compass" class="w-4 h-4 text-antiqueGold"></i>
+            <span>Multimodal Transport</span>
+          </button>
+          <button data-target="experiences-section" class="nav-category-tab px-3 py-2 text-sm font-medium tracking-wide text-slate-200 hover:text-antiqueGold transition-colors flex items-center gap-1.5">
+            <i data-lucide="scroll" class="w-4 h-4 text-antiqueGold"></i>
+            <span>Historical Experiences</span>
+          </button>
+          <button data-target="ancillaries-section" class="nav-category-tab px-3 py-2 text-sm font-medium tracking-wide text-slate-200 hover:text-antiqueGold transition-colors flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-4 h-4 text-antiqueGold"></i>
+            <span>Ancillaries</span>
+          </button>
+        </nav>
+
+        <!-- Utility Actions: Currency, Search, Cart, Account -->
+        <div class="flex items-center gap-3 sm:gap-4">
+          
+          <!-- Live Global Search Bar (Medium+ Screens) -->
+          <div class="hidden md:flex items-center bg-royalNavy-light/80 border border-antiqueGold/30 rounded-full px-3 py-1.5 text-xs text-slate-200 focus-within:border-antiqueGold transition-colors">
+            <i data-lucide="search" class="w-3.5 h-3.5 text-antiqueGold mr-2 shrink-0"></i>
+            <input type="text" id="global-search-input" placeholder="Search fort, guide, era..." class="bg-transparent text-xs text-slate-100 placeholder-slate-400 focus:outline-none w-32 xl:w-44">
+          </div>
+
+          <!-- Currency Selector -->
+          <div class="relative flex items-center bg-royalNavy-light/80 border border-antiqueGold/30 rounded-lg px-2 py-1 text-xs text-antiqueGold">
+            <i data-lucide="coins" class="w-3.5 h-3.5 mr-1 text-antiqueGold shrink-0"></i>
+            <select id="currency-select" class="bg-transparent text-xs text-antiqueGold font-bold focus:outline-none cursor-pointer">
+              <option value="USD" class="bg-royalNavy text-white">USD ($)</option>
+              <option value="INR" class="bg-royalNavy text-white">INR (₹)</option>
+              <option value="EUR" class="bg-royalNavy text-white">EUR (€)</option>
+            </select>
+          </div>
+
+          <!-- Language Selector -->
+          <div class="hidden sm:flex items-center text-xs text-slate-300 gap-1 bg-royalNavy-light/40 border border-white/10 rounded-lg px-2 py-1">
+            <i data-lucide="globe" class="w-3.5 h-3.5 text-antiqueGold"></i>
+            <span class="font-medium">EN</span>
+          </div>
+
+          <!-- Heritage Itinerary Cart Drawer Button -->
+          <button id="cart-drawer-trigger" class="relative p-2.5 rounded-xl bg-gradient-to-br from-royalNavy-light to-royalNavy border border-antiqueGold/40 text-antiqueGold hover:border-antiqueGold transition-colors shadow-md flex items-center gap-2 group">
+            <i data-lucide="scroll-text" class="w-5 h-5 text-antiqueGold group-hover:scale-110 transition-transform"></i>
+            <span class="hidden md:inline text-xs font-bold uppercase tracking-wider text-slate-200">Itinerary</span>
+            <!-- Live Badge Counter -->
+            <span class="cart-count-badge absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-royalMaroon text-white text-[11px] font-bold flex items-center justify-center border-2 border-royalNavy shadow">
+              4
+            </span>
+          </button>
+
+          <!-- VIP Guest Account Avatar -->
+          <button class="w-10 h-10 rounded-full bg-gradient-to-tr from-antiqueGold-dark via-antiqueGold to-antiqueGold-light p-[1.5px] shadow-lg shrink-0">
+            <div class="w-full h-full rounded-full bg-royalNavy flex items-center justify-center text-antiqueGold text-xs font-bold font-serif">
+              LR
+            </div>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-antiqueGold p-2">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden lg:hidden border-t border-antiqueGold/20 py-4 space-y-2">
+        <button data-target="heritage-stays-section" class="nav-category-tab w-full text-left px-3 py-2 text-sm text-slate-200 hover:text-antiqueGold flex items-center gap-2">
+          <i data-lucide="castle" class="w-4 h-4 text-antiqueGold"></i>
+          <span>Heritage Stays</span>
+        </button>
+        <button data-target="transport-section" class="nav-category-tab w-full text-left px-3 py-2 text-sm text-slate-200 hover:text-antiqueGold flex items-center gap-2">
+          <i data-lucide="compass" class="w-4 h-4 text-antiqueGold"></i>
+          <span>Multimodal Transport</span>
+        </button>
+        <button data-target="experiences-section" class="nav-category-tab w-full text-left px-3 py-2 text-sm text-slate-200 hover:text-antiqueGold flex items-center gap-2">
+          <i data-lucide="scroll" class="w-4 h-4 text-antiqueGold"></i>
+          <span>Historical Experiences</span>
+        </button>
+        <button data-target="ancillaries-section" class="nav-category-tab w-full text-left px-3 py-2 text-sm text-slate-200 hover:text-antiqueGold flex items-center gap-2">
+          <i data-lucide="shield-check" class="w-4 h-4 text-antiqueGold"></i>
+          <span>Ancillaries & Forex</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Parallax Sunset Fort Background -->
+  <section class="relative min-h-[640px] lg:min-h-[720px] flex items-center justify-center text-white overflow-hidden">
+    <!-- Majestic Sunset Fort Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=2000&q=85" 
+        alt="Ancient majestic fort citadel at sunset" 
+        class="w-full h-full object-cover object-center scale-105 transform translate-y-0"
+      >
+      <!-- Royal Gradient & Texture Overlay -->
+      <div class="absolute inset-0 hero-overlay"></div>
+      <div class="absolute inset-0 bg-radial-vignette opacity-50 pointer-events-none"></div>
+    </div>
+
+    <!-- Hero Content & Booking Widget Container -->
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center w-full">
+      
+      <!-- Regal Crest & Badge -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-royalNavy/80 border border-antiqueGold/50 backdrop-blur-md mb-6 shadow-xl">
+        <i data-lucide="sparkles" class="w-4 h-4 text-antiqueGold animate-pulse"></i>
+        <span class="text-xs uppercase tracking-[0.2em] font-semibold text-antiqueGold-light">
+          The World’s Premier Heritage Sanctuary Platform
+        </span>
+      </div>
+
+      <!-- Tagline & Heading -->
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4 leading-tight drop-shadow-lg">
+        Step back in time.<br>
+        <span class="gold-gradient-text italic font-serif">Travel where history lives.</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-300 font-normal mb-10 leading-relaxed drop-shadow">
+        Sleep inside 500-year-old bastions, traverse ancient continents by luxury royal trains and sunset cruises, and unlock underground vaults with accredited historians.
+      </p>
+
+      <!-- Unified Multi-Tab Booking Widget (MakeMyTrip / Airbnb hybrid) -->
+      <div class="max-w-4xl mx-auto bg-royalNavy/90 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-antiqueGold/40 shadow-2xl overflow-hidden text-left">
+        
+        <!-- Widget Tabs -->
+        <div class="flex border-b border-antiqueGold/20 bg-royalNavy-dark/60 text-xs sm:text-sm font-semibold">
+          <button data-tab="stays" class="hero-tab-btn flex-1 py-4 px-4 sm:px-6 text-center border-b-2 border-amber-400 text-amber-400 bg-slate-900/90 flex items-center justify-center gap-2 transition-all">
+            <i data-lucide="castle" class="w-4 h-4"></i>
+            <span>Heritage Stays</span>
+          </button>
+          <button data-tab="transport" class="hero-tab-btn flex-1 py-4 px-4 sm:px-6 text-center border-b-2 border-transparent text-slate-300 hover:text-amber-300 flex items-center justify-center gap-2 transition-all">
+            <i data-lucide="train" class="w-4 h-4"></i>
+            <span>Royal Transport</span>
+          </button>
+          <button data-tab="guides" class="hero-tab-btn flex-1 py-4 px-4 sm:px-6 text-center border-b-2 border-transparent text-slate-300 hover:text-amber-300 flex items-center justify-center gap-2 transition-all">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            <span>Certified Historians</span>
+          </button>
+        </div>
+
+        <!-- Tab Content Container (Dynamically rendered via js/app.js) -->
+        <div id="hero-tab-content">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Quick Trust Indicators -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-300">
+        <div class="flex items-center gap-2">
+          <i data-lucide="shield-check" class="w-4 h-4 text-antiqueGold"></i>
+          <span>100% Authentic Heritage Restoration</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="award" class="w-4 h-4 text-antiqueGold"></i>
+          <span>Archaeological Survey Licensed</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="lock" class="w-4 h-4 text-antiqueGold"></i>
+          <span>Bespoke Imperial Escort Service</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Historical Era Filter Bar -->
+  <section class="py-8 bg-[#F5EFE3] border-b border-parchment-border sticky top-20 z-30 shadow-sm backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <i data-lucide="hourglass" class="w-4 h-4 text-royalMaroon"></i>
+          <span class="font-serif font-bold text-sm text-slate-900 tracking-wide uppercase">Filter by Historical Era:</span>
+        </div>
+        
+        <!-- Interactive Pill Tags -->
+        <div id="era-filter-pills" class="flex flex-wrap items-center justify-center gap-2">
+          <!-- Populated by js/app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Featured Heritage Stays -->
+  <section id="heritage-stays-section" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+      <div>
+        <div class="flex items-center gap-2 text-antiqueGold-dark font-bold text-xs uppercase tracking-widest mb-1">
+          <i data-lucide="crown" class="w-4 h-4"></i>
+          <span>Citadels, Havelis & Palaces</span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
+          Featured Heritage Stays
+        </h2>
+        <p class="text-sm text-slate-600 mt-1 max-w-xl">
+          Restored under strict archaeological conservation protocols. Experience authentic royal courtyards, bastion suites, and dining under the stars.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-2 text-xs font-semibold text-slate-600">
+        <span>Verified Conservation Partners:</span>
+        <span class="bg-amber-100/80 text-amber-900 px-2.5 py-1 rounded border border-amber-300/50">UNESCO World Heritage</span>
+      </div>
+    </div>
+
+    <!-- Heritage Stays Grid -->
+    <div id="stays-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      <!-- Dynamically rendered via js/app.js -->
+    </div>
+  </section>
+
+  <!-- Section 2: Multimodal Transport Showcase -->
+  <section id="transport-section" class="py-16 bg-[#F4EDE0] border-y border-parchment-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-royalMaroon font-bold text-xs uppercase tracking-widest mb-1">
+            <i data-lucide="compass" class="w-4 h-4"></i>
+            <span>Multimodal Royal Journeys</span>
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
+            Sovereign Travel by Rail, River & Sky
+          </h2>
+          <p class="text-sm text-slate-600 mt-1 max-w-xl">
+            From the gilded carriages of the Maharajas' Express to sunset Ganges cruises and ruins-surveying helicopters.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button onclick="renderTransports('all')" class="px-3 py-1.5 rounded-lg bg-white border border-stone-300 text-xs font-semibold hover:border-antiqueGold text-slate-700">All Modes</button>
+          <button onclick="renderTransports('Train')" class="px-3 py-1.5 rounded-lg bg-white border border-stone-300 text-xs font-semibold hover:border-antiqueGold text-slate-700">Luxury Rail</button>
+          <button onclick="renderTransports('Cruise')" class="px-3 py-1.5 rounded-lg bg-white border border-stone-300 text-xs font-semibold hover:border-antiqueGold text-slate-700">Cruises</button>
+          <button onclick="renderTransports('Chopper')" class="px-3 py-1.5 rounded-lg bg-white border border-stone-300 text-xs font-semibold hover:border-antiqueGold text-slate-700">Choppers</button>
+        </div>
+      </div>
+
+      <!-- Multimodal Grid -->
+      <div id="transport-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Rendered by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Unique Historical Experiences Grid -->
+  <section id="experiences-section" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+      <div>
+        <div class="flex items-center gap-2 text-antiqueGold-dark font-bold text-xs uppercase tracking-widest mb-1">
+          <i data-lucide="award" class="w-4 h-4"></i>
+          <span>Archaeological Survey Licensed Curators</span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
+          Exclusive Historical Experiences
+        </h2>
+        <p class="text-sm text-slate-600 mt-1 max-w-xl">
+          Private access to subterranean vaults, decoded astronomical alignments, and multi-generational court banquets guided by certified scholars.
+        </p>
+      </div>
+
+      <div class="bg-royalNavy text-antiqueGold-light px-3 py-1.5 rounded-xl text-xs font-medium flex items-center gap-2 border border-antiqueGold/30">
+        <i data-lucide="key" class="w-3.5 h-3.5 text-antiqueGold"></i>
+        <span>Restricted Area Permits Guaranteed</span>
+      </div>
+    </div>
+
+    <!-- Experiences Grid -->
+    <div id="experiences-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <!-- Rendered by js/app.js -->
+    </div>
+  </section>
+
+  <!-- Section 4: Ancillary Services Quick Bar -->
+  <section id="ancillaries-section" class="py-16 bg-gradient-to-b from-[#FAF5EC] to-[#EFE7D8] border-t border-parchment-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold text-royalMaroon tracking-widest uppercase block mb-1">Imperial Concierge Services</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-900 mb-2">Bespoke Ancillaries & Protection</h2>
+        <p class="text-sm text-slate-600">Travel with peace of mind. Single-click concierge activations for medical, currency, and visa formalities.</p>
+      </div>
+
+      <!-- Ancillaries Cards -->
+      <div id="ancillaries-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Rendered by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Sticky Bottom Bar for Multi-Item Heritage Itinerary -->
+  <aside id="floating-itinerary-bar" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-8 sm:max-w-md z-40 bg-royalNavy/95 text-white p-4 rounded-2xl border border-antiqueGold/50 shadow-2xl backdrop-blur-lg transform translate-y-32 opacity-0 transition-all duration-300 flex items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-antiqueGold/20 border border-antiqueGold/40 flex items-center justify-center text-antiqueGold">
+        <i data-lucide="scroll" class="w-5 h-5"></i>
+      </div>
+      <div>
+        <div class="flex items-center gap-1.5">
+          <span class="text-xs font-bold text-slate-200" id="floating-itinerary-count">4 Heritage Items</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+        </div>
+        <div class="text-sm font-extrabold text-antiqueGold font-display" id="floating-itinerary-total">$1,180</div>
+      </div>
+    </div>
+
+    <button id="floating-bar-trigger" class="gold-shimmer-btn px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow flex items-center gap-1.5">
+      <span>View Itinerary</span>
+      <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+    </button>
+  </aside>
+
+  <!-- Dynamic Side Cart Drawer (Heritage Itinerary) -->
+  <div id="cart-drawer-backdrop" class="cart-drawer-backdrop fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 flex justify-end">
+    <div id="cart-drawer-panel" class="cart-drawer-panel w-full max-w-md bg-[#FAF7F0] h-full shadow-2xl border-l border-antiqueGold/30 flex flex-col justify-between">
+      
+      <!-- Drawer Header -->
+      <div class="p-5 sm:p-6 bg-royalNavy text-white border-b border-antiqueGold/30 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-antiqueGold/20 border border-antiqueGold/40 flex items-center justify-center text-antiqueGold">
+            <i data-lucide="scroll" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-lg text-white">Heritage Itinerary</h3>
+            <span class="text-[10px] text-antiqueGold uppercase tracking-widest font-semibold block">Combined Voyage Elements</span>
+          </div>
+        </div>
+        
+        <button id="close-cart-drawer" class="text-slate-400 hover:text-white p-1">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Items List -->
+      <div id="drawer-items-list" class="flex-1 p-5 overflow-y-auto space-y-3">
+        <!-- Rendered via js/app.js -->
+      </div>
+
+      <!-- Drawer Footer & Checkout Action -->
+      <div class="p-5 sm:p-6 bg-white border-t border-stone-200 shadow-lg space-y-4">
+        <!-- Price breakdown -->
+        <div class="space-y-1.5 text-xs">
+          <div class="flex justify-between text-slate-600">
+            <span>Heritage Subtotal</span>
+            <span class="font-bold text-slate-800 font-display" id="drawer-subtotal">$0</span>
+          </div>
+          <div class="flex justify-between text-slate-600">
+            <span class="flex items-center gap-1">
+              <span>Archaeological Conservation Tax</span>
+              <span class="text-[10px] text-amber-700 bg-amber-50 px-1 py-0.5 rounded border border-amber-200">12%</span>
+            </span>
+            <span class="font-bold text-slate-800 font-display" id="drawer-tax">$0</span>
+          </div>
+          <div class="flex justify-between text-slate-900 font-bold text-base pt-2 border-t border-stone-200">
+            <span class="font-serif">Imperial Grand Total</span>
+            <span class="text-royalMaroon font-display text-xl" id="drawer-total">$0</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <button id="btn-proceed-checkout" class="gold-shimmer-btn w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center gap-2">
+            <span>Proceed to Royal Checkout</span>
+            <i data-lucide="crown" class="w-4 h-4"></i>
+          </button>
+          
+          <button id="btn-clear-cart" class="w-full py-1 text-center text-[11px] text-slate-400 hover:text-red-600 font-medium">
+            Clear Itinerary
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1: Stay Details & Customizer Modal -->
+  <div id="stay-modal" class="modal-wrapper fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="royal-card w-full max-w-2xl bg-[#FAF6EE] rounded-3xl overflow-hidden border border-antiqueGold/40 shadow-2xl relative" id="stay-modal-body">
+      <!-- Injected via js/app.js -->
+    </div>
+  </div>
+
+  <!-- Modal 2: Ancillary Application Modal -->
+  <div id="ancillary-modal" class="modal-wrapper fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="royal-card w-full max-w-lg bg-[#FAF6EE] rounded-3xl overflow-hidden border border-antiqueGold/40 shadow-2xl relative" id="ancillary-modal-body">
+      <!-- Injected via js/app.js -->
+    </div>
+  </div>
+
+  <!-- Modal 3: Royal Checkout & Printable Voucher Modal -->
+  <div id="checkout-modal" class="modal-wrapper fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="royal-card w-full max-w-3xl bg-[#FAF6EE] rounded-3xl overflow-hidden border border-antiqueGold/40 shadow-2xl relative" id="checkout-modal-body">
+      <!-- Injected via js/app.js -->
+    </div>
+  </div>
+
+  <!-- Heritage Preservation Pledge & Global Footer -->
+  <footer class="bg-royalNavy border-t border-antiqueGold/30 text-slate-300 pt-16 pb-12 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Conservation Pledge Banner -->
+      <div class="bg-gradient-to-r from-royalNavy-light via-slate-900 to-royalNavy-light p-6 sm:p-8 rounded-2xl border border-antiqueGold/30 mb-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4 text-center md:text-left">
+          <div class="w-14 h-14 rounded-2xl bg-antiqueGold/20 border border-antiqueGold/40 flex items-center justify-center text-antiqueGold shrink-0">
+            <i data-lucide="landmark" class="w-8 h-8"></i>
+          </div>
+          <div>
+            <h4 class="font-display text-lg font-bold text-white">The 5% Living Heritage Preservation Pledge</h4>
+            <p class="text-xs text-slate-400 mt-0.5">Every booking directly funds local lime-mortar restoration, stone conservation, and heritage artisan guilds.</p>
+          </div>
+        </div>
+        <button class="gold-shimmer-btn px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider shrink-0">
+          Inspect Trust Audit
+        </button>
+      </div>
+
+      <!-- Links Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-7 h-7 rounded-lg bg-antiqueGold/20 border border-antiqueGold/50 flex items-center justify-center text-antiqueGold font-serif font-bold text-xs">
+              GP
+            </div>
+            <span class="font-display font-bold text-white tracking-widest text-lg">GLORY TO THE PAST</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed mb-4">
+            Curating rare access to historical monuments, restored citadels, and royal transport for discerning heritage travellers worldwide.
+          </p>
+          <div class="flex items-center gap-3 text-antiqueGold">
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-antiqueGold hover:text-royalNavy transition-colors"><i data-lucide="feather" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-antiqueGold hover:text-royalNavy transition-colors"><i data-lucide="compass" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-antiqueGold hover:text-royalNavy transition-colors"><i data-lucide="shield" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="font-serif font-bold text-sm text-antiqueGold uppercase tracking-wider mb-3">Historical Epochs</h5>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#stays-grid" onclick="state.setActiveEra('ancient');" class="hover:text-white transition-colors">Ancient Civilizations & Monasteries</a></li>
+            <li><a href="#stays-grid" onclick="state.setActiveEra('royal');" class="hover:text-white transition-colors">Rajputana & Mughal Fortresses</a></li>
+            <li><a href="#stays-grid" onclick="state.setActiveEra('colonial');" class="hover:text-white transition-colors">Colonial Verandahs & Mansions</a></li>
+            <li><a href="#stays-grid" onclick="state.setActiveEra('spiritual');" class="hover:text-white transition-colors">Sacred Ghats & Temple Citadels</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-serif font-bold text-sm text-antiqueGold uppercase tracking-wider mb-3">Royal Concierge</h5>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#ancillaries-section" class="hover:text-white transition-colors">Diplomatic E-Visa Fast-Track</a></li>
+            <li><a href="#ancillaries-section" class="hover:text-white transition-colors">Zero-Markup Heritage Forex Card</a></li>
+            <li><a href="#ancillaries-section" class="hover:text-white transition-colors">Relic & Antiquities Insurance</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Private Jet & Chopper Charters</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-serif font-bold text-sm text-antiqueGold uppercase tracking-wider mb-3">The Imperial Dispatch</h5>
+          <p class="text-xs text-slate-400 mb-3">Receive privately curated secret archaeological discoveries and off-market citadel suites.</p>
+          <div class="flex items-center">
+            <input type="email" placeholder="Your royal address..." class="bg-royalNavy-light border border-antiqueGold/30 text-xs px-3 py-2 rounded-l-lg text-white focus:outline-none focus:border-antiqueGold w-full">
+            <button class="gold-shimmer-btn px-4 py-2 rounded-r-lg text-xs font-bold uppercase tracking-wider">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="border-t border-antiqueGold/20 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© 2026 Glory to the Past Inc. Handcrafted for patrons of world heritage.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-antiqueGold">Archaeological Ethics</a>
+          <a href="#" class="hover:text-antiqueGold">Conservation Trust</a>
+          <a href="#" class="hover:text-antiqueGold">Privacy Treaty</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
