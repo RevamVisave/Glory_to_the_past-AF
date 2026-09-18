@@ -1,0 +1,24 @@
+{
+  "name": "glory-to-the-past",
+  "version": "1.0.0",
+  "description": "Glory to the Past - Luxury heritage, ancient travel, and vintage experience booking platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "heritage",
+    "travel",
+    "luxury",
+    "vintage",
+    "express",
+    "booking"
+  ],
+  "author": "Principal Full-Stack Engineer",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

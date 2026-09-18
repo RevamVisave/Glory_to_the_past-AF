@@ -1,0 +1,296 @@
+{
+  "stays": [
+    {
+      "id": "stay_1",
+      "title": "Mehrangarh Citadel Fortress Retreat",
+      "type": "Fort",
+      "location": "Jodhpur, Rajasthan, India",
+      "era": "15th Century AD (1459)",
+      "price": 850,
+      "rating": 4.98,
+      "reviewsCount": 142,
+      "imageUrl": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1000&q=80",
+      "description": "Perched 400 feet above the Blue City on a burnished cliff, sleep within fortified sandstone walls once guarded by Rathore sovereigns.",
+      "amenities": ["Royal Butler", "Sandstone Ramparts Walk", "Courtyard Banquets", "Antique Furnishings", "Stargazing Observatory"]
+    },
+    {
+      "id": "stay_2",
+      "title": "The Rambagh Royal Pavilion & Palace",
+      "type": "Royal Palace",
+      "location": "Jaipur, Rajasthan, India",
+      "era": "1835 Imperial Era",
+      "price": 1200,
+      "rating": 4.99,
+      "reviewsCount": 210,
+      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80",
+      "description": "Former residence of the Maharaja of Jaipur. Adorned with hand-carved marble latticework, lush Mughal gardens, and crystal chandeliers.",
+      "amenities": ["Private Carriage Escort", "Heritage Spa", "Polo Lounge", "Peacock Gardens", "Gourmet Durbar Dining"]
+    },
+    {
+      "id": "stay_3",
+      "title": "Mandawa Ancestral Frescoed Haveli",
+      "type": "Haveli",
+      "location": "Shekhawati, Rajasthan, India",
+      "era": "18th Century Silk Route",
+      "price": 420,
+      "rating": 4.92,
+      "reviewsCount": 88,
+      "imageUrl": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80",
+      "description": "An open-air art gallery featuring hand-painted natural pigment frescoes, carved brass doorways, and peaceful inner courtyards.",
+      "amenities": ["Fresco Restoration Tour", "Courtyard Hookah Lounge", "Rooftop Sunset Dining", "Folk Classical Sitarist", "Organic Orchard"]
+    },
+    {
+      "id": "stay_4",
+      "title": "Villa San Michele Medici Estate",
+      "type": "Vintage Villa",
+      "location": "Fiesole, Florence, Italy",
+      "era": "15th Century Renaissance",
+      "price": 1450,
+      "rating": 4.97,
+      "reviewsCount": 165,
+      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1000&q=80",
+      "description": "Nestled on the Florentine hills with a facade attributed to Michelangelo. Former Franciscan monastery overlooking the Arno Valley.",
+      "amenities": ["Panoramic Florence View", "Private Tuscan Sommelier", "Monastery Cloister Garden", "Chauffeured Alfa Romeo", "Fine Art Library"]
+    },
+    {
+      "id": "stay_5",
+      "title": "Castillo de Santa Catalina Moorish Alcazar",
+      "type": "Fort",
+      "location": "Jaén, Andalusia, Spain",
+      "era": "10th Century Moorish Fortress",
+      "price": 680,
+      "rating": 4.89,
+      "reviewsCount": 94,
+      "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1000&q=80",
+      "description": "Gothic cross vaults and Moorish towers perched high above the Andalusian olive valleys with defensive battlements and chivalric banqueting halls.",
+      "amenities": ["Watchtower Suites", "Andalusian Wine Cellar", "Medieval Weapons Hall", "Olive Grove Trails", "Private Falconry"]
+    },
+    {
+      "id": "stay_6",
+      "title": "Patwon Ki Haveli Golden Mansion",
+      "type": "Haveli",
+      "location": "Jaisalmer, Rajasthan, India",
+      "era": "1805 Golden Sandstone Era",
+      "price": 490,
+      "rating": 4.95,
+      "reviewsCount": 112,
+      "imageUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80",
+      "description": "Carved out of yellow Thar Desert sandstone with 60 delicate stone jharokhas (balconies) that illuminate into molten gold at twilight.",
+      "amenities": ["Desert Stargazing Deck", "Camel Safari Concierge", "Carved Jharokha Balcony", "Silverware Royal Dining", "Antique Textiles Gallery"]
+    },
+    {
+      "id": "stay_7",
+      "title": "Palazzo Dandolo Doge Residence",
+      "type": "Royal Palace",
+      "location": "Grand Canal, Venice, Italy",
+      "era": "14th Century Venetian Gothic",
+      "price": 1600,
+      "rating": 4.99,
+      "reviewsCount": 178,
+      "imageUrl": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=80",
+      "description": "Historic palazzo of Venetian nobility overlooking the lagoon. Featuring Murano crystal, silk damask wall coverings, and private water gates.",
+      "amenities": ["Private Gondola Watergate", "Murano Glass Chandeliers", "Grand Canal Balcony", "Rooftop Bell Tower Vista", "Harpsichord Salon"]
+    },
+    {
+      "id": "stay_8",
+      "title": "Château de Montmirail",
+      "type": "Vintage Villa",
+      "location": "Loire Valley, France",
+      "era": "17th Century Sun King Era",
+      "price": 1100,
+      "rating": 4.93,
+      "reviewsCount": 130,
+      "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1000&q=80",
+      "description": "Sprawling French chateau surrounded by ancient moats, classical topiary parterres, and gilded salons inspired by Versailles.",
+      "amenities": ["Wine Cave Vintage Tasting", "Equestrian Stables", "French Topiary Gardens", "Fireplace Salons", "Heated Orangery Pool"]
+    }
+  ],
+  "transport": [
+    {
+      "id": "trans_1",
+      "title": "The Royal Orient Luxury Express",
+      "category": "Heritage Train",
+      "route": "Delhi — Agra — Jaipur — Udaipur",
+      "duration": "7 Days / 6 Nights",
+      "price": 3400,
+      "imageUrl": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1000&q=80",
+      "description": "Gilded maharaja train with teak wood interiors, royal dining carriages, personal khidmatgars, and sweeping desert vistas.",
+      "highlights": ["Private Sleeper Saloon", "Royal Bar Car", "Off-train Citadel Excursions"]
+    },
+    {
+      "id": "trans_2",
+      "title": "The Venice Simplon-Orient-Express",
+      "category": "Heritage Train",
+      "route": "Paris — Vienna — Budapest — Istanbul",
+      "duration": "5 Days / 4 Nights",
+      "price": 4800,
+      "imageUrl": "https://images.unsplash.com/photo-1532105956626-9569c03602f6?auto=format&fit=crop&w=1000&q=80",
+      "description": "The quintessential golden age of rail. Original 1920s Art Deco sleeping cars, crystal glassware, and white-glove black-tie service.",
+      "highlights": ["1920s Art Deco Carriages", "Caviar & Champagne Welcome", "Live Baby Grand Piano Car"]
+    },
+    {
+      "id": "trans_3",
+      "title": "Aerial Citadel Heli-Safari",
+      "category": "Chopper Ride",
+      "route": "Amber Fort — Jaigarh — Nahargarh Fortress Run",
+      "duration": "60 Minutes",
+      "price": 450,
+      "imageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1000&q=80",
+      "description": "Soar above defensive stone ramparts, hidden fortress moats, and royal ridge-line sentry outposts with an aerial historian.",
+      "highlights": ["VIP Helipad Pickup", "Bose Noise-Canceling Audio", "High-Definition Aerial Photos"]
+    },
+    {
+      "id": "trans_4",
+      "title": "Theban Kings Valley Archaeo-Copter",
+      "category": "Chopper Ride",
+      "route": "Luxor — Karnak — Hatshepsut Temple — Valley of Kings",
+      "duration": "90 Minutes",
+      "price": 620,
+      "imageUrl": "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=1000&q=80",
+      "description": "Breathtaking low-altitude flight tracing Pharaoh tombs, towering colossal statues of Memnon, and the Nile river bends.",
+      "highlights": ["Sunrise Flight Slots", "Egyptologist Commentary", "Colossi of Memnon Flyby"]
+    },
+    {
+      "id": "trans_5",
+      "title": "1948 Royal Enfield Classic 500 Cruiser",
+      "category": "Vintage Bike Rental",
+      "route": "Aravalli Range & Fortress Highway",
+      "duration": "Full Day (24 Hours)",
+      "price": 180,
+      "imageUrl": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1000&q=80",
+      "description": "Handcrafted vintage thumper fitted with brass accents and leather saddlebags. The classic choice for traversing ancient trade passes.",
+      "highlights": ["Full Leather Saddlebags", "Vintage Leather Helmet", "Self-Guided GPS Heritage Waypoints"]
+    },
+    {
+      "id": "trans_6",
+      "title": "1962 Triumph Bonneville Heritage Ride",
+      "category": "Vintage Bike Rental",
+      "route": "Chiantigiana Wine Road & Medieval Castles",
+      "duration": "Full Day (24 Hours)",
+      "price": 240,
+      "imageUrl": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1000&q=80",
+      "description": "Twin-cylinder British icon tuned to perfection for winding through cypress-lined hills and Renaissance hilltop hamlets.",
+      "highlights": ["Classic Chrome Finish", "Roadside Assistance Included", "Vineyard Access Permit"]
+    },
+    {
+      "id": "trans_7",
+      "title": "Nile Royal Handcrafted Dahabiya Cruise",
+      "category": "Cruise",
+      "route": "Aswan to Luxor Heritage Sail",
+      "duration": "4 Days / 3 Nights",
+      "price": 2200,
+      "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80",
+      "description": "A tranquil traditional twin-sailed wooden river yacht without noisy motors, stopping at secluded island temples and village quays.",
+      "highlights": ["Only 8 Guest Suites", "Sunset Upper Deck Tea", "Private Temple Landing Ramps"]
+    },
+    {
+      "id": "trans_8",
+      "title": "1938 Douglas DC-3 Historic Sky Journey",
+      "category": "Historic Flight",
+      "route": "Cairo (Giza) — Petra (Aqaba) Historic Airway",
+      "duration": "4 Hours Air Odyssey",
+      "price": 1950,
+      "imageUrl": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1000&q=80",
+      "description": "Step into the dawn of civil aviation aboard a fully restored twin-engine prop aircraft with leather reclining lounge chairs.",
+      "highlights": ["Unobstructed Low-Level Panoramic Windows", "Vintage Cabin Crew Service", "Cockpit Photo Session"]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp_1",
+      "title": "Master Historian Private Walk: Roman Forum & Imperial Crypts",
+      "category": "Tour Guide",
+      "location": "Rome, Italy",
+      "duration": "4 Hours",
+      "price": 320,
+      "badge": "Chief Historian Led",
+      "imageUrl": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1000&q=80",
+      "description": "Led by an Oxford Classical Antiquity PhD. Gain keys to underground pagan shrines and closed Senatorial meeting chambers."
+    },
+    {
+      "id": "exp_2",
+      "title": "VIP Archaeo-Pass: Active Tomb Excavation Access",
+      "category": "Archaeologist Pass",
+      "location": "Valley of the Kings, Luxor, Egypt",
+      "duration": "Full Day Access",
+      "price": 550,
+      "badge": "Official Permit",
+      "imageUrl": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1000&q=80",
+      "description": "Wear specialized protective boots to enter non-public active conservation shafts with the chief field archaeologist."
+    },
+    {
+      "id": "exp_3",
+      "title": "Solitary Twilight Access: Petra Treasury & Siq Gorge",
+      "category": "Ancient Monument Ticket",
+      "location": "Wadi Musa, Jordan",
+      "duration": "3 Hours (After Hours)",
+      "price": 380,
+      "badge": "Solitary VIP Access",
+      "imageUrl": "https://images.unsplash.com/photo-1579606032834-deffd3390c58?auto=format&fit=crop&w=1000&q=80",
+      "description": "Walk through the Siq Canyon illuminated only by 1,500 beeswax lanterns after all tourist gates are locked for the night."
+    },
+    {
+      "id": "exp_4",
+      "title": "Colosseum Underground Hypogeum & Arena Nocturne",
+      "category": "Ancient Monument Ticket",
+      "location": "Rome, Italy",
+      "duration": "2.5 Hours",
+      "price": 280,
+      "badge": "Nocturnal Gate Entry",
+      "imageUrl": "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=1000&q=80",
+      "description": "Descend into subterranean trapdoor lift systems and beast cages beneath the moonlit sands of the Flavian Amphitheatre."
+    },
+    {
+      "id": "exp_5",
+      "title": "Court Calligrapher & Epigrapher Masterclass",
+      "category": "Tour Guide",
+      "location": "Kyoto & Nara, Japan",
+      "duration": "3.5 Hours",
+      "price": 260,
+      "badge": "Living Cultural Treasure",
+      "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80",
+      "description": "Learn to read 1,000-year-old Heian wooden scrolls and grind pine-soot ink inside an unesco temple annex."
+    },
+    {
+      "id": "exp_6",
+      "title": "Stonehenge Inner Monolith Solstice Circle Pass",
+      "category": "Archaeologist Pass",
+      "location": "Wiltshire, England",
+      "duration": "2 Hours (Sunrise)",
+      "price": 340,
+      "badge": "Inside Stone Circle",
+      "imageUrl": "https://images.unsplash.com/photo-1599837965370-4a81b37f4019?auto=format&fit=crop&w=1000&q=80",
+      "description": "Step inside the inner sarsen trilithons during dawn stillness when ordinary barriers are retracted for scientific permit holders."
+    }
+  ],
+  "ancillaries": [
+    {
+      "id": "anc_1",
+      "title": "Diplomatic & Heritage Fast-Track E-Visa",
+      "category": "E-Visa Concierge",
+      "price": 85,
+      "icon": "fa-passport",
+      "description": "Expedited pre-clearance and consular stamps for ancient travel corridors and archaeological research sanctuaries.",
+      "features": ["24-Hour Processing", "Border Concierge Assistance", "All Embassy Tariffs Covered"]
+    },
+    {
+      "id": "anc_2",
+      "title": "Sovereign Gold Multi-Currency Antique Forex Card",
+      "category": "Forex Card",
+      "price": 40,
+      "icon": "fa-credit-card",
+      "description": "Zero mark-up foreign exchange card accepted across 160 historical territories with built-in traveler theft immunity.",
+      "features": ["Zero Markup on Global Currencies", "Emergency Cash Delivery by Courier", "Complimentary Lounge Access"]
+    },
+    {
+      "id": "anc_3",
+      "title": "Royal Expedition & Archaeological Travel Insurance",
+      "category": "Travel Insurance",
+      "price": 120,
+      "icon": "fa-shield-halved",
+      "description": "Comprehensive Lloyd's backed policy covering remote mountain fort rescues, antique artifact damage liability, and flight changes.",
+      "features": ["$1,000,000 Emergency Medevac", "Vintage Transit Damage Cover", "Pre-existing Condition Waivers"]
+    }
+  ],
+  "bookings": []
+}
